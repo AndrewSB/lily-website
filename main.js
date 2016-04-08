@@ -1,0 +1,3 @@
+view Main {
+  <Home.Head />
+}

@@ -1,0 +1,13 @@
+{
+  "author": "",
+  "name": "motion-app-navi-website",
+  "repository": "https://github.com/navi-website",
+  "description": "",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {},
+  "dependencies": {
+    "rebass": "^0.2.5"
+  },
+  "installed": []
+}
