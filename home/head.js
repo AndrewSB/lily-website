@@ -8,5 +8,5 @@ view Home.Head {
     <h1>Lily</h1>
     <h2>We make incorporation short and easy</h2>
   </Banner>
-  
+
 }
