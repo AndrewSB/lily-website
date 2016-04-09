@@ -20,9 +20,9 @@ view Home.Demo {
 }
 
 view ChatBubble {
-  <p>{view.props.text}</p>
-
   let fromMe = view.props.fromMe
+
+  <p>{view.props.text}</p>
 
   $ = {
     borderRadius: 22,
