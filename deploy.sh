@@ -1,4 +1,4 @@
 #/!bin/bash
 
 motion build
-surge .motion/build textlily.com
+surge .motion/build www.textlily.com

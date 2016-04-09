@@ -6,8 +6,8 @@ view Home.Header {
       <left>
         <img
           src="http://i.imgur.com/F26YRqx.jpg"
-          height={44}
-          width={44}
+          height={75}
+          width={75}
           />
         <h1>Lily</h1>
       </left>
@@ -15,8 +15,8 @@ view Home.Header {
         <button>
           <img
             src="http://i.imgur.com/ZsL2bCp.png"
-            height={44}
-            width={44}
+            height={33}
+            width={33}
             />
           Messenger
         </button>
@@ -27,21 +27,28 @@ view Home.Header {
   $content = {
     backgroundColor: "white",
     display: 'flex',
+    height: 80,
   }
 
   $left = {
     textAlign: 'left',
     display: 'flex',
+    alignItems: "center",
   }
 
   $right = {
     textAlign: "right",
     display: "flex",
+    alignItems: "center",
+    float: 'right'
   }
 
   $button = {
     background: "#1787FB",
     color: 'white',
-    fontSize: 22,
+    fontSize: 18,
+    border: 'none',
+    display: 'flex',
+    alignItems: 'center',
   }
 }
