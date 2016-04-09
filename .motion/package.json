@@ -7,6 +7,7 @@
   "main": "",
   "scripts": {},
   "dependencies": {
+    "react-stickynode": "^1.0.18",
     "rebass": "^0.2.5"
   },
   "installed": []

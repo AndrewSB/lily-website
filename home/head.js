@@ -1,6 +1,11 @@
 import { Banner } from 'rebass'
+import Sticky from 'react-stickynode'
 
 view Home.Head {
+
+  <Sticky enabled={true} top={0}>
+    <h1>Lily</h1>
+  </Sticky>
 
   <Banner
     align="center"
