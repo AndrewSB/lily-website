@@ -1,21 +1,13 @@
+import { exposeLinks } from '../constants'
+
 view Home.Expose {
   <h1>A new way to shop, focused on you.</h1>
-  <icons>
-    <Icon
-      image="https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg"
-      heading="Personalized Service"
-      description="We tailor recommendations to match your taste. No consideration is too small."
-    />
-    <Icon
-      image="https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg"
-      heading="Personalized Service"
-      description="We tailor recommendations to match your taste. No consideration is too small."
-    />
-    <Icon
-      image="https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg"
-      heading="Personalized Service"
-      description="We tailor recommendations to match your taste. No consideration is too small."
-    />
+
+  console.log(exposeLinks)
+  console.log('bruh')
+
+  <icons repeat={exposeLinks}>
+    <Icon {..._}/>
   </icons>
 
   $h1 = {
