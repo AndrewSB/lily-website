@@ -3,7 +3,7 @@ import { Banner } from 'rebass'
 view Home.Demo {
   <Banner
     align="center"
-    backgroundImage="https://pixabay.com/static/uploads/photo/2011/08/03/02/13/balloon-8480_960_720.jpg"
+    backgroundImage="http://i.imgur.com/rzJqpd8.jpg?1"
     >
     <chatBubbles>
       <ChatBubble text="Hey Lily, the app I build is doing really well. I want to raise money from investors, so I am thinking about incorporating" fromMe={true}/>
