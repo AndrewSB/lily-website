@@ -14,7 +14,7 @@ view Home.Header {
       <content>
         <left>
           <img
-            src="http://i.imgur.com/F26YRqx.jpg"
+            src="http://i.imgur.com/1wLaA85.png?1"
             height={70}
             width={70}
             />
