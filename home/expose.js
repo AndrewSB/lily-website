@@ -3,11 +3,10 @@ import { exposeLinks } from '../constants'
 view Home.Expose {
   <h1>A new way to shop, focused on you.</h1>
 
-  console.log(exposeLinks)
-  console.log('bruh')
-
-  <icons repeat={exposeLinks}>
-    <Icon {..._}/>
+  <icons>
+    <icon repeat={exposeLinks}>
+      <Icon {..._}/>
+    </icon>
   </icons>
 
   $h1 = {
@@ -15,7 +14,7 @@ view Home.Expose {
   }
 
   $icons = {
-    display: "flex"
+    display: 'flex'
   }
 }
 
@@ -27,7 +26,6 @@ view Icon {
   <p>{view.props.description}</p>
 
   $ = {
-    width: '30%',
     marginLeft: '3%',
     marginRight: '3%'
   }

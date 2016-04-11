@@ -1,3 +1,4 @@
+import { chat } from '../constants'
 import { Banner } from 'rebass'
 
 view Home.Demo {
@@ -5,11 +6,8 @@ view Home.Demo {
     align="center"
     backgroundImage="http://i.imgur.com/rzJqpd8.jpg?1"
     >
-    <chatBubbles>
-      <ChatBubble text="Hey Lily, the app I build is doing really well. I want to raise money from investors, so I am thinking about incorporating" fromMe={true}/>
-      <ChatBubble text="Hey Andrew, that sounds great. If you’re thinking about raising money, you probably need a C-Corp based in Delaware" fromMe={false}/>
-      <ChatBubble text="That makes sense. Let’s do it!" fromMe={true}/>
-      <ChatBubble text="Ok great, I’ll walk you through the steps" fromMe={false}/>
+    <chatBubbles repeat={chat}>
+      <ChatBubble {..._}/>
     </chatBubbles>
   </Banner>
 

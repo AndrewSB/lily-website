@@ -21,14 +21,7 @@ view Home.Header {
           <h1>Lily</h1>
         </left>
         <right>
-          <button>
-            <img
-              src="http://i.imgur.com/ZsL2bCp.png"
-              height={33}
-              width={33}
-              />
-            Messenger
-          </button>
+          <MessengerButton />
         </right>
       </content>
     </nonPhantomContent>
@@ -70,14 +63,5 @@ view Home.Header {
     display: "flex",
     alignItems: "center",
     float: 'right'
-  }
-
-  $button = {
-    background: "#1787FB",
-    color: 'white',
-    fontSize: 18,
-    border: 'none',
-    display: 'flex',
-    alignItems: 'center',
   }
 }
