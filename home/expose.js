@@ -1,10 +1,10 @@
-import { exposeLinks } from '../constants'
+import { expose } from '../content'
 
 view Home.Expose {
   <h1>A new way to shop, focused on you.</h1>
 
   <icons>
-    <icon repeat={exposeLinks}>
+    <icon repeat={expose}>
       <Icon {..._}/>
     </icon>
   </icons>

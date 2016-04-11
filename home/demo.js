@@ -1,11 +1,8 @@
-import { chat } from '../constants'
+import { images, chat } from '../content'
 import { Banner } from 'rebass'
 
 view Home.Demo {
-  <Banner
-    align="center"
-    backgroundImage="http://i.imgur.com/rzJqpd8.jpg?1"
-    >
+  <Banner align="center" backgroundImage={images.background.demo}>
     <chatBubbles repeat={chat}>
       <ChatBubble {..._}/>
     </chatBubbles>

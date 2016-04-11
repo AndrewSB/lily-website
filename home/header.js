@@ -1,3 +1,4 @@
+import { images } from '../content'
 import Sticky from 'react-stickynode'
 
 view Home.Header {
@@ -5,8 +6,15 @@ view Home.Header {
   on.scroll(window, e => {
     let w = e.path[0]
     headerOpacity = Math.min(1, w.pageYOffset / w.outerHeight)
-    console.log(headerOpacity)
   })
+
+  let textColor = 'white'
+  on.scroll(window, e => {
+    let w = e.path[0]
+    let rgbVal = Math.ceil((1 - Math.min(1, w.pageYOffset / w.outerHeight)) * 255)
+    textColor = 'rgb(' + rgbVal + ',' + rgbVal + ',' + rgbVal + ')'
+  })
+
 
   <Sticky enabled={true} top={0}>
     <phantomBackground></phantomBackground>
@@ -18,10 +26,9 @@ view Home.Header {
             height={70}
             width={70}
             />
-          <h1>Lily</h1>
         </left>
         <right>
-          <MessengerButton />
+          <MessengerButton backgroundColor='transparent' fadeText={true} />
         </right>
       </content>
     </nonPhantomContent>
@@ -30,6 +37,7 @@ view Home.Header {
   $ = {
     position: 'absolute',
     width: '100%',
+    color: textColor,
   }
 
   $phantomBackground = {
@@ -53,15 +61,20 @@ view Home.Header {
   }
 
   $left = {
+    marginLeft: 50,
     textAlign: 'left',
     display: 'flex',
     alignItems: "center",
+  }
+
+  $img = {
   }
 
   $right = {
     textAlign: "right",
     display: "flex",
     alignItems: "center",
-    float: 'right'
+    float: 'right',
+    marginRight: 50,
   }
 }
