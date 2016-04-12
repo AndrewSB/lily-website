@@ -4,5 +4,6 @@ view Main {
   <Home.Description />
   <Home.Demo />
   <Home.Expose />
+  <Home.CallToAction />
   <Home.Footer />
 }

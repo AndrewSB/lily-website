@@ -61,7 +61,15 @@ const copy = {
       },
     ],
   },
-  footer: {},
+  callToAction: {
+    title: 'Thinking about incorporating?',
+    subtitle: 'Lily can help!',
+    buttonTitle: 'Text Lily now',
+  },
+  footer: {
+    title: 'Lily',
+    subtitle: 'Made with ♥️ in sf',
+  },
 }
 
 const images = {
