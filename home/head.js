@@ -7,7 +7,12 @@ view Home.Head {
     <headerText>
       <h3>{copy.head.title}</h3>
       <p>{copy.head.subtitle}</p>
-      <MessengerButton text={copy.head.callToAction} iconSize={33} fontSize="22px" borderWidth='inherit'/>
+      <MessengerButton
+        text={copy.head.callToAction}
+        iconSize={33}
+        fontSize="22px"
+        borderWidth='inherit'
+        />
     </headerText>
   </Banner>
 
@@ -22,11 +27,11 @@ view Home.Head {
   }
 
   $h3 = {
-    margin: [2, 0, 2, 0],
+    margin: [2, 0],
   }
 
   $p = {
-    margin: [2, 0, 2, 0],
+    margin: [2, 0],
     fontSize: '.75em',
   }
 

@@ -1,35 +1,41 @@
+import { styles, color } from '../constants'
+
 view MessengerButton {
+  let buttonSize = view.props.iconSize || 33
+
   <button>
-    <img src="http://i.imgur.com/91CqGdN.png"
-      width={view.props.iconSize || 33}
-      height={view.props.iconSize || 33}
-      />
+    <img src="http://i.imgur.com/91CqGdN.png" width={buttonSize} height={buttonSize} />
     {view.props.text || 'Messenger'}
   </button>
 
   let fadeText = view.props.fadeText || false
   let textColor = 'white'
-  on.scroll(window, e => {
-    let w = e.path[0]
-    let rgbVal = Math.ceil((1 - Math.min(1, w.pageYOffset / w.outerHeight)) * 255)
-    textColor = fadeText ? 'rgb(' + rgbVal + ',' + rgbVal + ',' + rgbVal + ')' : textColor
+  on.scroll(window, () => {
+    let normalizedDecimalScroll = Math.min(1, window.pageYOffset / window.outerHeight)
+    let rgbVal = Math.ceil((1 - normalizedDecimalScroll) * 255)
+    textColor = fadeText ? ['rgb(', ',', ',', ')'].join(rgbVal) : textColor
   })
 
-  $button = {
+  $button = [styles.flexAndCenter, {
     padding: [6, 25, 6 , 10],
-    background: view.props.backgroundColor || '#1787FB',
-    color: textColor + ' ',
+    background: view.props.backgroundColor || color.facebookBlue,
+    color: textColor,
     fontSize: view.props.fontSize || 18,
-    display: 'flex',
-    alignItems: 'center',
-    borderRadius: 5,
     border: 'solid',
+    borderRadius: 5,
     borderWidth: view.props.borderWidth || 1,
     borderColor: textColor,
-    cursor: 'hand',
-  }
+    cursor: 'pointer',
+
+    transitionDuration: '0.4s',
+    hover: {
+      color: 'white',
+      borderColor: 'white',
+      background: color.facebookBlue,
+    },
+  }]
 
   $img = {
-    margin: [0, 5, 0, 5],
+    margin: [0, 5]
   }
 }

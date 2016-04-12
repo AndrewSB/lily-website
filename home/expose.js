@@ -1,12 +1,11 @@
-import { copy, expose } from '../content'
+import { copy } from '../content'
+import { styles } from '../constants'
 
 view Home.Expose {
   <h1>{copy.expose.title}</h1>
 
   <icons>
-    <icon repeat={expose}>
-      <Icon {..._}/>
-    </icon>
+      <Icon repeat={copy.expose.iconsAndDescriptions} {..._}/>
   </icons>
 
   $h1 = {
@@ -26,20 +25,11 @@ view Icon {
   <p>{view.props.description}</p>
 
   $ = {
-    marginLeft: '3%',
-    marginRight: '3%'
+    margin: [0, '3%'],
+    textAlign: 'center',
   }
 
   $span = {
     display: "block",
-    textAlign: "center",
-  }
-
-  $h4 = {
-    textAlign: "center",
-  }
-
-  $p = {
-    textAlign: "center",
   }
 }

@@ -1,7 +1,5 @@
 view Home.Footer {
-
   <h4>Lily</h4>
-  
   <p>Made with ♥️ in sf</p>
 
   $ = {

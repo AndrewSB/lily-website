@@ -1,24 +1,20 @@
+import { styles } from '../constants'
 import { copy, images } from '../content'
 import Sticky from 'react-stickynode'
 
 view Home.Header {
   let headerOpacity = 0
-  on.scroll(window, e => {
-    let w = e.path[0]
-    headerOpacity = Math.min(1, w.pageYOffset / w.outerHeight)
-  })
-
   let textColor = 'white'
-  on.scroll(window, e => {
-    let w = e.path[0]
-    let rgbVal = Math.ceil((1 - Math.min(1, w.pageYOffset / w.outerHeight)) * 255)
-    textColor = 'rgb(' + rgbVal + ',' + rgbVal + ',' + rgbVal + ')'
-  })
+  on.scroll(window, () => {
+    let normalizedDecimalScroll = Math.min(1, window.pageYOffset / window.outerHeight)
+    headerOpacity = normalizedDecimalScroll
 
+    let rgbVal = Math.ceil((1 - normalizedDecimalScroll) * 255)
+    textColor = ['rgb(', ',', ',', ')'].join(rgbVal)
+  })
 
   <Sticky enabled={true} top={0}>
-    <phantomBackground></phantomBackground>
-    <nonPhantomContent>
+    <phantomBackground />
       <content>
         <left>
           <h1>{copy.header.title}</h1>
@@ -27,47 +23,40 @@ view Home.Header {
           <MessengerButton backgroundColor='transparent' fadeText={true} />
         </right>
       </content>
-    </nonPhantomContent>
   </Sticky>
 
   $ = {
     position: 'absolute',
     width: '100%',
+  }
+
+  $h1 = {
     color: textColor,
   }
 
   $phantomBackground = {
     height: 80,
     opacity: headerOpacity,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   }
 
-  $nonPhantomContent = {
+  $content = {
+    display: 'flex',
+    justifyContent: 'space-between',
     position: 'absolute',
     top: 0,
+    padding: [0, 25, 0, 12],
     height: 80,
     width: '100%',
   }
 
-  $content = {
-    padding: [0, 25, 0, 12],
-    display: 'flex',
-    justifyContent: 'space-between',
-    height: 80,
-  }
-
-  $left = {
+  $left = [styles.flexAndCenter, {
     marginLeft: 50,
     textAlign: 'left',
-    display: 'flex',
-    alignItems: "center",
-  }
+  }]
 
-  $right = {
-    textAlign: "right",
-    display: "flex",
-    alignItems: "center",
-    float: 'right',
+  $right = [styles.flexAndCenter, {
     marginRight: 50,
-  }
+    textAlign: 'right',
+  }]
 }
