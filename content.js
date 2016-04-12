@@ -48,8 +48,28 @@ const images = {
   },
 }
 
+const copy = {
+  header: {
+    title: 'Lily'
+  },
+  head: {
+    title: 'We make incorporation short and easy',
+    subtitle: 'Lily is a service that connects you to experts to help you incorporate your business',
+    callToAction: 'Text us',
+  },
+  description: {
+    header: 'Incorporate a business in 15 minutes over text',
+    description: 'We\'ll walk you through the entire process',
+  },
+  expose: {
+    title: 'A new way to shop, focused on you.'
+  },
+  footer: {},
+}
+
 export default {
   expose,
   chat,
   images,
+  copy,
 }

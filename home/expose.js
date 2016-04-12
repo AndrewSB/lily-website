@@ -1,7 +1,7 @@
-import { expose } from '../content'
+import { copy, expose } from '../content'
 
 view Home.Expose {
-  <h1>A new way to shop, focused on you.</h1>
+  <h1>{copy.expose.title}</h1>
 
   <icons>
     <icon repeat={expose}>

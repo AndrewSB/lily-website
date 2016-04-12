@@ -1,13 +1,13 @@
 import { device } from '../constants'
-import { images } from '../content'
+import { copy, images } from '../content'
 import { Banner } from 'rebass'
 
 view Home.Head {
   <Banner align="center" backgroundImage={images.background.head}>
     <headerText>
-      <h3>We make incorporation short and easy</h3>
-      <p>Lily is a service that connects you to experts to help you incorporate your business</p>
-      <MessengerButton text="Text us" iconSize={33} fontSize="22px" borderWidth='inherit'/>
+      <h3>{copy.head.title}</h3>
+      <p>{copy.head.subtitle}</p>
+      <MessengerButton text={copy.head.callToAction} iconSize={33} fontSize="22px" borderWidth='inherit'/>
     </headerText>
   </Banner>
 

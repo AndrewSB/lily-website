@@ -1,4 +1,4 @@
-import { images } from '../content'
+import { copy, images } from '../content'
 import Sticky from 'react-stickynode'
 
 view Home.Header {
@@ -21,11 +21,7 @@ view Home.Header {
     <nonPhantomContent>
       <content>
         <left>
-          <img
-            src="http://i.imgur.com/1wLaA85.png?1"
-            height={70}
-            width={70}
-            />
+          <h1>{copy.header.title}</h1>
         </left>
         <right>
           <MessengerButton backgroundColor='transparent' fadeText={true} />
@@ -65,9 +61,6 @@ view Home.Header {
     textAlign: 'left',
     display: 'flex',
     alignItems: "center",
-  }
-
-  $img = {
   }
 
   $right = {
