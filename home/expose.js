@@ -8,13 +8,18 @@ view Home.Expose {
       <Icon repeat={copy.expose.iconsAndDescriptions} {..._} />
   </icons>
 
+  $ = {
+    textAlign: 'center',
+  }
+
   $h1 = {
-    textAlign: "center",
+    textAlign: 'center',
   }
 
   $icons = {
     display: 'flex',
     flexWrap: 'wrap',
+    justifyContent: 'space-around',
   }
 }
 
