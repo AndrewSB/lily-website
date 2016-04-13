@@ -59,6 +59,11 @@ const copy = {
         heading: "Personalized Service",
         description: "We tailor recommendations to match your taste. No consideration is too small.",
       },
+      {
+        image: "https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg",
+        heading: "Personalized Service",
+        description: "We tailor recommendations to match your taste. No consideration is too small.",
+      },
     ],
   },
   callToAction: {

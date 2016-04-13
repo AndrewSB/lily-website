@@ -5,7 +5,7 @@ view Home.Expose {
   <h1>{copy.expose.title}</h1>
 
   <icons>
-      <Icon repeat={copy.expose.iconsAndDescriptions} {..._}/>
+      <Icon repeat={copy.expose.iconsAndDescriptions} {..._} />
   </icons>
 
   $h1 = {
@@ -13,7 +13,8 @@ view Home.Expose {
   }
 
   $icons = {
-    display: 'flex'
+    display: 'flex',
+    flexWrap: 'wrap',
   }
 }
 
@@ -25,8 +26,9 @@ view Icon {
   <p>{view.props.description}</p>
 
   $ = {
-    margin: [0, '3%'],
+    margin: [0, 12],
     textAlign: 'center',
+    width: 460,
   }
 
   $span = {
