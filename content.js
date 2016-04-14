@@ -5,7 +5,7 @@ const copy = {
   head: {
     title: 'We make incorporation short and easy',
     subtitle: 'Lily is a service that connects you to experts that help you to incorporate your business',
-    callToAction: 'Start incorporating with Lily now',
+    callToAction: 'Start now',
   },
   description: {
     header: 'Text Lily, incorporate your business in minutes',

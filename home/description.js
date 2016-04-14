@@ -1,14 +1,13 @@
-import { styles } from '../constants'
+import { styles, color } from '../constants'
 import { copy } from '../content'
 
 view Home.Description {
-  <h3>{copy.description.header}</h3>
-  <h5>{copy.description.description}</h5>
+  <h2>{copy.description.header}</h2>
+  <h3>{copy.description.description}</h3>
 
   <products>
     <product repeat={copy.description.products}>
       <img src={_.url} />
-      <p>{_.description}</p>
     </product>
   </products>
 
@@ -16,10 +15,19 @@ view Home.Description {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    padding: [22],
+    textAlign: 'center',
+  }
+
+  $h2 = {
+    color: color.facebookBlue
+  }
+
+  $h3 = {
+    padding: [0, 150],
   }
 
   $products = {
-    width: '100%',
     display: 'flex',
     justifyContent: 'space-around',
   }

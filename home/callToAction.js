@@ -12,8 +12,17 @@ view Home.CallToAction {
     />
 
   $ = [styles.flexAndCenter, {
+    color: 'white',
     flexDirection: 'column',
-    background: '#858585',
+    background: '#555555',
     padding: [33, 33],
   }]
+
+  $h2 = {
+    padding: [0],
+  }
+
+  $h4 = {
+    padding: [0],
+  }
 }

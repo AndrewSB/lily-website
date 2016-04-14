@@ -9,7 +9,10 @@ view Home.Expose {
   </icons>
 
   $ = {
+    backgroundColor: '#F0F1F3',
     textAlign: 'center',
+    padding: [20],
+    paddingBottom: 44,
   }
 
   $h1 = {
@@ -25,7 +28,12 @@ view Home.Expose {
 
 view Icon {
   <span>
-    <img src={view.props.image} align='center'/>
+    <img
+      src={view.props.image}
+      align='center'
+      height="130"
+      width="130"
+      />
   </span>
   <h4>{view.props.heading}</h4>
   <p>{view.props.description}</p>
