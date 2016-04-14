@@ -9,7 +9,7 @@ const copy = {
   },
   description: {
     header: 'Text Lily, incorporate your business in minutes',
-    description: 'Lily is the smartest way to incorporate. Every part of the experience has been designed around your convenience. One text and we'll walk you through the whole process.,
+    description: 'Lily is the smartest way to incorporate. Every part of the experience has been designed around your convenience. One text and we\'ll walk you through the whole process.',
     products: [
       {
         url: 'http://i.imgur.com/ciI38hF.png?1',
@@ -72,7 +72,7 @@ const copy = {
     buttonTitle: 'Get started now',
   },
   footer: {
-    title: 'We are waiving all service fees in April.',
+    title: 'We\'re waiving all service fees in April.',
     subtitle: 'Made with ♥️ in sf',
   },
 }
