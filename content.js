@@ -4,7 +4,7 @@ const copy = {
   },
   head: {
     title: 'We make incorporation short and easy',
-    subtitle: 'Lily is a service that connects you to experts to help you incorporate your business',
+    subtitle: 'Lily is a service that connects you to experts that help you to incorporate your business',
     callToAction: 'Message us',
   },
   description: {
@@ -12,11 +12,11 @@ const copy = {
     description: 'We'll walk you through the entire process.',
     products: [
       {
-        url: 'https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg',
+        url: 'http://i.imgur.com/ciI38hF.png?1',
         description: 'C-Corp',
       },
       {
-        url: 'https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg',
+        url: 'http://i.imgur.com/Azb6Wek.png?1',
         description: 'LLC'
       },
     ]
