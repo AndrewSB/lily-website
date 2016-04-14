@@ -42,7 +42,7 @@ const copy = {
     ],
   },
   expose: {
-    title: 'Taking the complexity out of incorporation.',
+    title: 'Taking the stress out of incorporation.',
     iconsAndDescriptions: [
       {
         image: "http://imgur.com/96TgMfH",
@@ -68,11 +68,11 @@ const copy = {
   },
   callToAction: {
     title: 'Thinking about incorporating?',
-    subtitle: 'We can help! Plus in April we are waiving all service fees.',
+    subtitle: 'Save time and focus on what matters!',
     buttonTitle: 'Get started now',
   },
   footer: {
-    title: 'Lily',
+    title: 'We are waiving all service fees in April.',
     subtitle: 'Made with ♥️ in sf',
   },
 }
