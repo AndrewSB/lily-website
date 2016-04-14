@@ -9,7 +9,7 @@ const copy = {
   },
   description: {
     header: 'Incorporate your business in a couple of minutes over a fun and easy conversation',
-    description: 'We'll walk you through the entire process. (Right now we are waiving all service fees for our early customers.)',
+    description: 'We'll walk you through the entire process.',
     products: [
       {
         url: 'https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg',
@@ -68,7 +68,7 @@ const copy = {
   },
   callToAction: {
     title: 'Thinking about incorporating?',
-    subtitle: 'We can help!',
+    subtitle: 'We can help! Plus in April we are waiving all service fees.',
     buttonTitle: 'Get started now',
   },
   footer: {
