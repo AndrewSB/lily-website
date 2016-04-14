@@ -12,11 +12,11 @@ const copy = {
     description: 'Lily is the smartest way to incorporate. Every part of the experience has been designed around your convenience. One text and we\'ll walk you through the whole process.',
     products: [
       {
-        url: 'http://i.imgur.com/ciI38hF.png?1',
+        url: 'http://i.imgur.com/ciI38hF.png',
         description: 'C-Corp',
       },
       {
-        url: 'http://i.imgur.com/Azb6Wek.png?1',
+        url: 'http://i.imgur.com/Azb6Wek.png',
         description: 'LLC'
       },
     ]
@@ -45,22 +45,22 @@ const copy = {
     title: 'Taking the stress out of incorporation.',
     iconsAndDescriptions: [
       {
-        image: "http://imgur.com/96TgMfH",
+        image: "http://i.imgur.com/96TgMfH.jpg",
         heading: "Personalized Assistance",
         description: "We use our expertise to tailor your business needs",
       },
       {
-        image: "http://imgur.com/sw8zhvM",
+        image: "http://i.imgur.com/sw8zhvM.jpg",
         heading: "At Your Service",
         description: "We do the research and the leg work helping you save time and energy",
       },
       {
-        image: "http://imgur.com/Bvlw4ag",
+        image: "http://i.imgur.com/Bvlw4ag.jpg",
         heading: "Incorporation Made Easy",
         description: "We provide the forms and everything else that you will need",
       },
       {
-        image: "http://imgur.com/7RhVux2",
+        image: "http://i.imgur.com/7RhVux2.jpg",
         heading: "Peace of Mind",
         description: "We are here when you have any questions along the way",
       },
