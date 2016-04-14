@@ -8,8 +8,8 @@ const copy = {
     callToAction: 'Message us',
   },
   description: {
-    header: 'Incorporate a business in 15 minutes over text',
-    description: 'We\'ll walk you through the entire process',
+    header: 'Incorporate your business in a couple of minutes over a fun and easy conversation',
+    description: 'We'll walk you through the entire process. (Right now we are waiving all service fees for our early customers.)',
     products: [
       {
         url: 'https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg',
@@ -45,31 +45,31 @@ const copy = {
     title: 'A new way to shop, focused on you.',
     iconsAndDescriptions: [
       {
-        image: "https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg",
-        heading: "Personalized Service",
-        description: "We tailor recommendations to match your taste. No consideration is too small.",
+        image: "http://imgur.com/96TgMfH",
+        heading: "Personalized Assistance",
+        description: "We use our expertise to tailor your business needs",
       },
       {
-        image: "https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg",
-        heading: "Personalized Service",
-        description: "We tailor recommendations to match your taste. No consideration is too small.",
+        image: "http://imgur.com/sw8zhvM",
+        heading: "At Your Service",
+        description: "We do the research and the leg work helping you save time and energy",
       },
       {
-        image: "https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg",
-        heading: "Personalized Service",
-        description: "We tailor recommendations to match your taste. No consideration is too small.",
+        image: "http://imgur.com/Bvlw4ag",
+        heading: "Incorporation Made Easy",
+        description: "We provide the forms and everything else that you will need",
       },
       {
-        image: "https://d1vfnsg13zvlk4.cloudfront.net/icon-global.svg",
-        heading: "Personalized Service",
-        description: "We tailor recommendations to match your taste. No consideration is too small.",
+        image: "http://imgur.com/7RhVux2",
+        heading: "Peace of Mind",
+        description: "We are here when you have any questions along the way",
       },
     ],
   },
   callToAction: {
     title: 'Thinking about incorporating?',
-    subtitle: 'Lily can help!',
-    buttonTitle: 'Text Lily now',
+    subtitle: 'We can help!',
+    buttonTitle: 'Get started now',
   },
   footer: {
     title: 'Lily',
