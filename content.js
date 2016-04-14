@@ -9,7 +9,7 @@ const copy = {
   },
   description: {
     header: 'Text Lily, incorporate your business in minutes',
-    description: 'Lily is the smartest way to incorporate. One text and we'll walk you through the whole process. Lily knows exactly what to do.,
+    description: 'Lily is the smartest way to incorporate. One text and we'll walk you through the whole process. Every part of the Lily experience has been designed around your convenience.,
     products: [
       {
         url: 'http://i.imgur.com/ciI38hF.png?1',
@@ -24,7 +24,7 @@ const copy = {
   demo: {
     chat: [
       {
-        text: "Hey Lily, the app I build is doing really well. I want to raise money from investors, so I am thinking about incorporating",
+        text: "Hey Lily, the app I am building is doing really well. I want to raise money from investors, so I am thinking about incorporating",
         fromMe: true,
       },
       {
@@ -42,7 +42,7 @@ const copy = {
     ],
   },
   expose: {
-    title: 'A new way to shop, focused on you.',
+    title: 'Taking the complexity out of incorporation.',
     iconsAndDescriptions: [
       {
         image: "http://imgur.com/96TgMfH",
