@@ -9,7 +9,7 @@ const copy = {
   },
   description: {
     header: 'Text Lily, incorporate your business in minutes',
-    description: 'Lily is the smartest way to incorporate. One text and we'll walk you through the whole process. Every part of the Lily experience has been designed around your convenience.,
+    description: 'Lily is the smartest way to incorporate. Every part of the experience has been designed around your convenience. One text and we'll walk you through the whole process.,
     products: [
       {
         url: 'http://i.imgur.com/ciI38hF.png?1',
