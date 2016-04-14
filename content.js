@@ -5,11 +5,11 @@ const copy = {
   head: {
     title: 'We make incorporation short and easy',
     subtitle: 'Lily is a service that connects you to experts that help you to incorporate your business',
-    callToAction: 'Message us',
+    callToAction: 'Start incorporating with Lily now',
   },
   description: {
-    header: 'Incorporate your business in a couple of minutes over a fun and easy conversation',
-    description: 'We'll walk you through the entire process.',
+    header: 'Text Lily, incorporate your business in minutes',
+    description: 'Lily is the smartest way to incorporate. One text and we'll walk you through the whole process. Lily knows exactly what to do.,
     products: [
       {
         url: 'http://i.imgur.com/ciI38hF.png?1',
