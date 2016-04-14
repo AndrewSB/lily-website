@@ -13,7 +13,7 @@ view Home.CallToAction {
     />
 
   $ = [styles.flexAndCenter, {
-    background: 'url(http://i.imgur.com/Spaa8ZP.jpg)',
+    background: 'url(' + copy.callToAction.backgroundImage + ')',
     color: 'white',
     flexDirection: 'column',
     padding: [55, 33],

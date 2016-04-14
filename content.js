@@ -70,10 +70,22 @@ const copy = {
     title: 'Thinking about incorporating?',
     subtitle: 'Save time and focus on what matters!',
     buttonTitle: 'Get started now',
+    backgroundImage: 'http://i.imgur.com/Spaa8ZP.jpg',
   },
   footer: {
-    title: 'We\'re waiving all service fees in April.',
-    subtitle: 'Made with ♥️ in sf',
+    left: {
+      title: 'LILY',
+      description: 'blah blah blah',
+    },
+    center: {
+      title: 'CONTACT',
+      phoneNumber: '+1 (650) 815-5781',
+      email: 'hello@textlily.com',
+    },
+    right: {
+      title: 'PRESS',
+      email: 'press@textlily.com',
+    },
   },
 }
 

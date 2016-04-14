@@ -3,17 +3,17 @@ import { copy } from '../content'
 
 view Home.Footer {
   <left>
-    <h3>LILY</h3>
-    <p>description</p>
+    <h3>{copy.footer.left.title}</h3>
+    <p>{copy.footer.left.description}</p>
   </left>
   <center>
-    <h3>CONTACT</h3>
-    <a>+1 (650) 815-5781</a>
-    <a>hello@textlily.com</a>
+    <h3>{copy.footer.center.title}</h3>
+    <a href={'sms:' + copy.footer.center.phoneNumber}>{copy.footer.center.phoneNumber}</a>
+    <a href={'mailto:' + copy.footer.center.email}>{copy.footer.center.email}</a>
   </center>
   <right>
-    <h3>PRESS</h3>
-    <a>press@textlily.com</a>
+    <h3>{copy.footer.right.title}</h3>
+    <a href={'mailto:' + copy.footer.right.email}>{copy.footer.right.email}</a>
   </right>
 
   $ = [styles.flexAndCenter, {
