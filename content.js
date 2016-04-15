@@ -75,16 +75,16 @@ const copy = {
   footer: {
     left: {
       title: 'LILY',
-      description: 'blah blah blah',
+      description: 'Lily is a service that connects you to experts that help you to incorporate your business.',
     },
     center: {
       title: 'CONTACT',
       phoneNumber: '+1 (650) 815-5781',
-      email: 'hello@textlily.com',
+      email: 'hi@textlily.com',
     },
     right: {
       title: 'PRESS',
-      email: 'press@textlily.com',
+      email: 'hi+press@textlily.com',
     },
   },
 }

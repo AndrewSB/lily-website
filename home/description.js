@@ -20,7 +20,7 @@ view Home.Description {
   }
 
   $h2 = {
-    color: color.facebookBlue
+    color: '#2F79D8'
   }
 
   $h3 = {
@@ -30,6 +30,7 @@ view Home.Description {
   $products = {
     display: 'flex',
     justifyContent: 'space-around',
+    width: '80%'
   }
 
   $product = [styles.flexAndCenter, {

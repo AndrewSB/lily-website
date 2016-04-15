@@ -26,6 +26,14 @@ view Home.Demo {
     </chatBubbles>
   </Banner>
 
+  $ = {
+    overflow: 'hidden'
+  }
+
+  $Banner = {
+    marginBottom: 0,
+  }
+
   $chatBubbles = {
     margin: [0, '30%'],
   }

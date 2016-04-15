@@ -8,8 +8,8 @@ view Home.Footer {
   </left>
   <center>
     <h3>{copy.footer.center.title}</h3>
-    <a href={'sms:' + copy.footer.center.phoneNumber}>{copy.footer.center.phoneNumber}</a>
     <a href={'mailto:' + copy.footer.center.email}>{copy.footer.center.email}</a>
+    <a href={'sms:' + copy.footer.center.phoneNumber}>{copy.footer.center.phoneNumber}</a>
   </center>
   <right>
     <h3>{copy.footer.right.title}</h3>
@@ -21,7 +21,7 @@ view Home.Footer {
       justifyContent: 'center',
       padding: [50, 22],
       color: 'white',
-      background: '#0a0a0a',
+      background: '#262626',
   }]
 
   const commonStyle = [styles.flexAndCenter, {
