@@ -1,4 +1,4 @@
-import { device } from '../constants'
+import { device, styles } from '../constants'
 import { copy, images } from '../content'
 import { Banner } from 'rebass'
 
@@ -21,24 +21,30 @@ view Home.Head {
     textAlign: 'left',
 
     [device.small]: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
       padding: 'inherit',
       textAlign: 'center',
     },
   }
 
+
+
   $h3 = {
     margin: [2, 0],
-
-    [device.small]: {
-    },
   }
 
   $p = {
     margin: [2, 0],
     fontSize: '.75em',
+
+    [device.small]: {
+      fontSize: '.6em',
+    },
   }
 
   $MessengerButton = {
-    marginTop: 12,
+    marginTop: 15,
   }
 }

@@ -1,4 +1,4 @@
-import { styles } from '../constants'
+import { device, styles } from '../constants'
 import { copy, images } from '../content'
 import Sticky from 'react-stickynode'
 
@@ -20,7 +20,7 @@ view Home.Header {
           <h1>{copy.header.title}</h1>
         </left>
         <right>
-          <MessengerButton backgroundColor='transparent' fadeText={true} />
+          <MessengerButton backgroundColor='transparent' fadeText={true} shrink={true} />
         </right>
       </content>
   </Sticky>
@@ -48,6 +48,10 @@ view Home.Header {
     padding: [0, 25, 0, 12],
     height: 80,
     width: '100%',
+
+    [device.small]: {
+      padding: [0],
+    },
   }
 
   $left = [styles.flexAndCenter, {
@@ -58,5 +62,9 @@ view Home.Header {
   $right = [styles.flexAndCenter, {
     marginRight: 50,
     textAlign: 'right',
+
+    [device.small]: {
+      marginRight: 22,
+    },
   }]
 }

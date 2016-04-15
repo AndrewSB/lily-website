@@ -1,4 +1,4 @@
-import { styles, color } from '../constants'
+import { device, styles, color } from '../constants'
 import { copy } from '../content'
 
 view Home.Description {
@@ -11,20 +11,26 @@ view Home.Description {
     </product>
   </products>
 
-  $ = {
-    display: 'flex',
+  $ = [styles.flexAndCenter ,{
     flexDirection: 'column',
-    alignItems: 'center',
     padding: [22],
     textAlign: 'center',
-  }
+  }]
 
   $h2 = {
-    color: '#2F79D8'
+    color: '#2F79D8',
+
+    [device.small]: {
+      fontSize: '2em',
+    }
   }
 
   $h3 = {
     padding: [0, 150],
+
+    [device.small]: {
+      padding: 'inherit'
+    },
   }
 
   $products = {

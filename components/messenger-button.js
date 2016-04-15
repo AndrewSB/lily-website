@@ -1,4 +1,4 @@
-import { styles, color } from '../constants'
+import { device, styles, color } from '../constants'
 
 view MessengerButton {
   let buttonSize = view.props.iconSize || 33
@@ -16,8 +16,9 @@ view MessengerButton {
     textColor = fadeText ? ['rgb(', ',', ',', ')'].join(rgbVal) : textColor
   })
 
+  let ogPadding = [6, 25, 6 , 10]
   $button = [styles.flexAndCenter, {
-    padding: [6, 25, 6 , 10],
+    padding: ogPadding,
     background: view.props.backgroundColor || color.facebookBlue,
     color: textColor,
     fontSize: view.props.fontSize || 18,
@@ -32,6 +33,10 @@ view MessengerButton {
       color: 'white',
       borderColor: 'white',
       background: color.facebookBlue,
+    },
+
+    [device.small]: {
+      padding: view.props.shrink ? [3, 12, 3, 5] : ogPadding,
     },
   }]
 

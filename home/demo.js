@@ -1,3 +1,4 @@
+import { device } from '../constants'
 import { images, copy } from '../content'
 import { spring, Motion } from 'react-motion'
 import { Banner } from 'rebass'
@@ -26,16 +27,16 @@ view Home.Demo {
     </chatBubbles>
   </Banner>
 
-  $ = {
-    overflow: 'hidden'
-  }
-
   $Banner = {
     marginBottom: 0,
   }
 
   $chatBubbles = {
     margin: [0, '30%'],
+
+    [device.small]: {
+      margin: 'inherit',
+    },
   }
 }
 
