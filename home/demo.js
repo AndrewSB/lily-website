@@ -17,7 +17,7 @@ view Home.Demo {
     visibleBubbles.push(chatBubble)
   }
 
-  <Banner align="center" backgroundImage={images.background.demo}>
+  <Banner style={{marginBottom: 0}} align="center" backgroundImage={images.background.demo}>
     <chatBubbles>
       <chatBubble repeat={visibleBubbles}>
         <Motion defaultStyle={{x: -40}} style={{x: spring(0) }}>
@@ -26,10 +26,6 @@ view Home.Demo {
       </chatBubble>
     </chatBubbles>
   </Banner>
-
-  $Banner = {
-    marginBottom: 0,
-  }
 
   $chatBubbles = {
     margin: [0, '30%'],
