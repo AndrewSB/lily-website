@@ -8,7 +8,7 @@ const copy = {
     callToAction: 'Start now',
   },
   description: {
-    header: 'Text Lily, incorporate your business in minutes',
+    header: 'Lily incorporates for you',
     description: 'Lily is the smartest way to incorporate. Every part of the experience has been designed around your convenience. One text and we\'ll walk you through the whole process.',
     products: [
       {
@@ -70,7 +70,6 @@ const copy = {
     title: 'Thinking about incorporating?',
     subtitle: 'Save time and focus on what matters!',
     buttonTitle: 'Get started now',
-    backgroundImage: 'http://i.imgur.com/Spaa8ZP.jpg',
   },
   footer: {
     left: {
@@ -94,6 +93,7 @@ const images = {
   background: {
     demo: 'http://i.imgur.com/W98uxfx.jpg',
     head: 'http://i.imgur.com/rzJqpd8.jpg',
+    callToAction: 'http://i.imgur.com/PBzT5oF.jpg',
   },
 }
 

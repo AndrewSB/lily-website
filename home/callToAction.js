@@ -1,11 +1,12 @@
 import { styles } from '../constants'
-import { copy } from '../content'
+import { copy, images } from '../content'
 import { Banner } from 'rebass'
 
 view Home.CallToAction {
   <h1>{copy.callToAction.title}</h1>
   <h3>{copy.callToAction.subtitle}</h3>
   <MessengerButton
+    backgroundColor={'orange'}
     text={copy.callToAction.buttonTitle}
     iconSize={33}
     fontSize="22px"
@@ -13,7 +14,8 @@ view Home.CallToAction {
     />
 
   $ = [styles.flexAndCenter, {
-    background: 'url(' + copy.callToAction.backgroundImage + ')',
+    background: 'url(' + images.background.callToAction + ') no-repeat',
+    backgroundSize: 'cover',
     color: 'white',
     flexDirection: 'column',
     padding: [55, 33],

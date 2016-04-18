@@ -39,9 +39,10 @@ view Icon {
   <p>{view.props.description}</p>
 
   $ = {
-    margin: [0, 12],
+    margin: [0, 44],
+    // padding: [0, 44],
     textAlign: 'center',
-    width: 460,
+    width: 350,
   }
 
   $span = {
