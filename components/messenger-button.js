@@ -1,12 +1,14 @@
+import { messengerLink } from '../content'
 import { device, styles, color } from '../constants'
 
 view MessengerButton {
   let buttonSize = view.props.iconSize || 33
 
-  <button>
+  let messengerLocation = "location.href = " + messengerLink
+  <a href={messengerLink}>
     <img src="http://i.imgur.com/91CqGdN.png" width={buttonSize} height={buttonSize} />
-    {view.props.text || 'Messenger'}
-  </button>
+    <span>{view.props.text || 'Messenger'}</span>
+  </a>
 
   let fadeText = view.props.fadeText || false
   let textColor = 'white'
@@ -16,8 +18,11 @@ view MessengerButton {
     textColor = fadeText ? ['rgb(', ',', ',', ')'].join(rgbVal) : textColor
   })
 
-  let ogPadding = [6, 25, 6 , 10]
-  $button = [styles.flexAndCenter, {
+  let paddingHeight = view.props.paddingHeight || 6
+  let ogPadding = [paddingHeight, 25, paddingHeight , 10]
+  $a = {
+    display: 'inline-block',
+    textDecoration: 'none',
     padding: ogPadding,
     background: view.props.backgroundColor || color.facebookBlue,
     color: textColor,
@@ -38,9 +43,13 @@ view MessengerButton {
     [device.small]: {
       padding: view.props.shrink ? [3, 12, 3, 5] : ogPadding,
     },
-  }]
+  }
 
   $img = {
     margin: [0, 5]
+  }
+
+  $span = {
+    verticalAlign: 'middle',
   }
 }

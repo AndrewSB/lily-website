@@ -10,6 +10,7 @@ view Home.CallToAction {
     text={copy.callToAction.buttonTitle}
     iconSize={33}
     fontSize="22px"
+    paddingHeight="9px"
     borderWidth='inherit'
     />
 
@@ -21,7 +22,12 @@ view Home.CallToAction {
     padding: [55, 33],
   }]
 
+  $h1 = {
+    marginBottom: 8
+  }
+
   $h3 = {
     margin: [8, 0, 44, 0],
+    fontWeight: 'inherit',
   }
 }

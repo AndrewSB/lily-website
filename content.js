@@ -57,12 +57,12 @@ const copy = {
       {
         image: "http://i.imgur.com/Bvlw4ag.jpg",
         heading: "Incorporation Made Easy",
-        description: "We provide the forms and everything else that you will need",
+        description: "We provide forms and everything else that you will need",
       },
       {
         image: "http://i.imgur.com/7RhVux2.jpg",
         heading: "Peace of Mind",
-        description: "We are here when you have any questions along the way",
+        description: "We are here when you have questions along the way",
       },
     ],
   },
@@ -97,7 +97,10 @@ const images = {
   },
 }
 
+const messengerLink = 'http://m.me/192015661176397'
+
 export default {
   copy,
   images,
+  messengerLink
 }
