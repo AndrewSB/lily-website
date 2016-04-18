@@ -1,4 +1,4 @@
-import { styles } from '../constants'
+import { device, styles } from '../constants'
 import { copy, images } from '../content'
 import { Banner } from 'rebass'
 
@@ -15,11 +15,12 @@ view Home.CallToAction {
     />
 
   $ = [styles.flexAndCenter, {
+    textAlign: 'center',
     background: 'url(' + images.background.callToAction + ') no-repeat',
     backgroundSize: 'cover',
     color: 'white',
     flexDirection: 'column',
-    padding: [55, 33],
+    padding: [100, 33],
   }]
 
   $h1 = {

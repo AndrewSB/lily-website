@@ -6,12 +6,23 @@ import { Banner } from 'rebass'
 view Home.Demo {
   let visibleBubbles = []
 
-  on.every(2 * 1000, () => {
-    let newChatBubble = copy.demo.chat[visibleBubbles.length]
-    if (newChatBubble !== undefined) {
-      visibleBubbles.push(newChatBubble)
+  on.scroll(window, () => {
+    let hasScrolledHalfwayDown = 0.5 < (window.pageYOffset / window.outerHeight)
+    if (hasScrolledHalfwayDown && !hasStartedBubbling) {
+      hasStartedBubbling = true
+      startBubbling()
     }
   })
+
+  let hasStartedBubbling = false
+  let startBubbling = () => {
+    on.every(1 * 1000, () => {
+      let newChatBubble = copy.demo.chat[visibleBubbles.length]
+      if (newChatBubble !== undefined) {
+        visibleBubbles.push(newChatBubble)
+      }
+    })
+  }
 
   <Banner style={{margin: 0, padding: ['auto', 0]}} align="center" backgroundImage={images.background.demo}>
     <chatBubbles>
