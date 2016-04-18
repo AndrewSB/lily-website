@@ -6,32 +6,29 @@ import { Banner } from 'rebass'
 view Home.Demo {
   let visibleBubbles = []
 
-  setInterval(() => {
+  on.every(2 * 1000, () => {
     let newChatBubble = copy.demo.chat[visibleBubbles.length]
     if (newChatBubble !== undefined) {
-      addChatBubble(newChatBubble)
+      visibleBubbles.push(newChatBubble)
     }
-  }, 1.5 * 1000)
+  })
 
-  let addChatBubble = (chatBubble) => {
-    visibleBubbles.push(chatBubble)
-  }
-
-  <Banner style={{marginBottom: 0}} align="center" backgroundImage={images.background.demo}>
+  <Banner style={{margin: 0, padding: ['auto', 0]}} align="center" backgroundImage={images.background.demo}>
     <chatBubbles>
-      <chatBubble repeat={visibleBubbles}>
-        <Motion defaultStyle={{x: -40}} style={{x: spring(0) }}>
+        <Motion repeat={visibleBubbles} defaultStyle={{x: -40}} style={{x: spring(0) }}>
           {i => <ChatBubble style={{marginBottom: i.x}} {..._} />}
         </Motion>
-      </chatBubble>
     </chatBubbles>
   </Banner>
 
   $chatBubbles = {
-    margin: [0, '30%'],
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    margin: [10, '15%', 10, '50%'],
 
     [device.small]: {
-      margin: 'inherit',
+      margin: [10, '12%'],
     },
   }
 }
@@ -43,26 +40,28 @@ view ChatBubble {
 
   let fromMe = view.props.fromMe
   const toFromStyling = {
-    background: fromMe ? '#E5E5EA' : '#36A2F8',
-    color: fromMe ? 'black' : 'white',
+    background: fromMe ? '#36A2F8' : '#E5E5EA',
+    color: fromMe ? 'white' : 'black',
   }
 
   $ = {
+    maxWidth: '75%',
+    alignSelf: fromMe ? 'flex-end' : 'flex-start',
     marginLeft: fromMe ? '20%' : 0,
-    marginRight: fromMe ? 0 : '20%'
+    marginRight: fromMe ? 0 : '20%',
   }
 
   $bubble = [toFromStyling, {
-    borderRadius: 22,
-    margin: [10],
-    maxWidth: '70%',
+    display: 'inline-block',
+    borderRadius: 25,
+    margin: [15, 1],
     fontSize: 18,
     textAlign: 'left',
   }]
 
   $p = {
-    fontSize: 16,
+    fontSize: 15,
     margin: [10, 0],
-    padding: [18],
+    padding: [10, 14],
   }
 }
