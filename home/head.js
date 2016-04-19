@@ -20,7 +20,7 @@ view Home.Head {
     paddingRight: '33%',
     textAlign: 'left',
 
-    [device.small]: {
+    '@media (max-width: 850px)': {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
