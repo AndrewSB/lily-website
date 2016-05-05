@@ -82,8 +82,8 @@ const copy = {
       email: 'hi@textlily.com',
     },
     right: {
-      title: 'PRESS',
-      email: 'hi+press@textlily.com',
+      title: 'DISCLAIMER',
+      disclaimer: 'We aren\'t lawyers and can\'t provide legal advice',
     },
   },
 }

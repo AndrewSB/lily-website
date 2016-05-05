@@ -11,24 +11,29 @@ view Home.Footer {
     <a href={'mailto:' + copy.footer.center.email}>{copy.footer.center.email}</a>
     <a href={'sms:' + copy.footer.center.phoneNumber}>{copy.footer.center.phoneNumber}</a>
   </section>
-  // <section>
-  //   <h3>{copy.footer.right.title}</h3>
-  //   <a href={'mailto:' + copy.footer.right.email}>{copy.footer.right.email}</a>
-  // </section>
+  <section>
+    <h3>{copy.footer.right.title}</h3>
+    <p>{copy.footer.right.disclaimer}</p>
+  </section>
 
   $ = [styles.flexAndCenter, {
       flexDirection: 'row',
       flexWrap: 'wrap',
+      alignItems: 'top',
       justifyContent: 'space-between',
       padding: [50, '12%'],
       color: 'white',
       background: '#262626',
+
+      [device.small]: {
+        justifyContent: 'center',
+      },
   }]
 
   $section = [styles.flexAndCenter, {
     flexDirection: 'column',
     textAlign: 'center',
-    width: 350,
+    width: 250,
   }]
 
   const colorAndPadding = {

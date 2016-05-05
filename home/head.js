@@ -29,8 +29,6 @@ view Home.Head {
     },
   }
 
-
-
   $h3 = {
     margin: [2, 0],
   }
