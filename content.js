@@ -83,7 +83,7 @@ const copy = {
     },
     right: {
       title: 'DISCLAIMER',
-      disclaimer: 'We aren\'t lawyers and can\'t provide legal advice',
+      disclaimer: 'Though we aren\'t lawyers and can\'t provide legal advice, we connect you with skilled attorneys who can.',
     },
   },
 }
