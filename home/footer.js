@@ -1,4 +1,4 @@
-import { styles } from '../constants'
+import { device, styles } from '../constants'
 import { copy } from '../content'
 
 view Home.Footer {
